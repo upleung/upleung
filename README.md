@@ -5,7 +5,7 @@
 </h1>
 
 <h3 align="center" style="color:#ff00ff;">
-  Linux / ARMv7 Developer · Docker Builder · IPTV Streaming Development · Cloudflare Worker Crafter · Network Engineer ·  US Stock Value Investor
+  Linux / ARMv7 Developer · Docker Builder · IPTV Streaming Development · Network Engineer · US Stock Value Investor
 </h3>
 
 ---
