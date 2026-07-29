@@ -5,7 +5,7 @@
 </h1>
 
 <h3 align="center" style="color:#ff00ff;">
-  Linux / ARMv7 Developer · Docker Builder · IPTV Automation Engineer · Cloudflare Worker Crafter
+  Linux / ARMv7 Developer · Docker Builder · IPTV Streaming Development · Cloudflare Worker Crafter · Network Engineer ·  US Stock Value Investor
 </h3>
 
 ---
@@ -25,13 +25,13 @@
 I build lightweight, efficient, systems across **Linux**, **ARM SBCs**, and **Dockerized environments**.  
 My work focuses on:
 
-💠 **IPTV automation**  
+💠 **IPTV automation (MoonTV / TVBOX)**  
 💠 **Streamlink pipelines**  
 💠 **Cloudflare Workers API relays**  
 💠 **Multi‑arch Docker builds (ARMv7/ARM64)**  
-💠 **Vue music frontends (YesPlayMusic / Solara / GDMUSIC)**  
-💠 **WSL2 + Hy2 proxy networking**  
-💠 **Armbian automation on 玩客云**
+💠 **Vue music frontends (Solara / SOXL Music / GDMUSIC)**  
+💠 **OpenWrt + Xray + Singbox + Hy2 proxy networking**  
+💠 **Armbian Docker Builder on OneCloud (玩客云)**
 
 Everything I build follows one rule:  
 > **If it can be automated, it *will* be automated.**
