@@ -1,7 +1,7 @@
 <!-- Cyberpunk Neon Profile -->
 
 <h1 align="center">
-  <span style="color:#00eaff;">⚡ upleung ⚡</span>
+  <span style="color:#00eaff;">⚡ Plan your coding and coding your plan ⚡</span>
 </h1>
 
 <h3 align="center" style="color:#ff00ff;">
