@@ -9,9 +9,6 @@
 </h3>
 
 ---
-
-## 🟣 Neon Badges
-
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-00eaff?style=for-the-badge&logo=linux&logoColor=white" />
   <img src="https://img.shields.io/badge/ARMv7-ff00ff?style=for-the-badge&logo=raspberry-pi&logoColor=white" />
@@ -23,7 +20,7 @@
 
 ---
 
-## 💻 About Me — *Neon Edition*
+## 💻 About Me
 
 I build lightweight, efficient, cyberpunk‑style systems across **Linux**, **ARM SBCs**, and **Dockerized environments**.  
 My work focuses on:
@@ -75,7 +72,7 @@ I prefer **neon‑themed terminal setups** and **cyberpunk UI aesthetics**.
 
 ---
 
-# 🟡 **Neon Cyberpunk GitHub Stats**
+# 🟡 **GitHub Stats**
 
 <div align="center">
 
@@ -92,12 +89,9 @@ I prefer **neon‑themed terminal setups** and **cyberpunk UI aesthetics**.
 
 ---
 
-## 🧬 Cyberpunk Contact
-
 <p align="center">
   <img src="https://img.shields.io/badge/GitHub-upleung-00eaff?style=for-the-badge&logo=github" />
 </p>
 
 ---
 
-<h2 align="center" style="color:#ff00ff;">✨ Welcome to my neon‑lit world ✨</h2>
