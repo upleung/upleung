@@ -47,28 +47,11 @@ Everything I build follows one rule:
 
 ---
 
-## 🌱 Learning
+## 💎 Learning
 
 - Advanced Cloudflare routing  
 - High‑performance streaming pipelines  
 - Multi‑device workflow optimization  
-
----
-
-## 💎 Collaboration
-
-Open to working on:
-
-- IPTV automation  
-- ARMv7 / ARM64 Docker builds  
-- Cloudflare microservices  
-- Streaming pipelines  
-
----
-
-## ⚡ Fun Fact
-
-I prefer **neon‑themed terminal setups** and **cyberpunk UI aesthetics**.
 
 ---
 
