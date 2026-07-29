@@ -56,7 +56,7 @@ Everything I build follows one rule:
 
 ---
 
-# 🍔 **GitHub Stats**
+# 🍔**GitHub Stats**
 
 <div align="center">
 
