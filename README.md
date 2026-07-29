@@ -40,15 +40,16 @@ Everything I build follows one rule:
 
 ## 🔭 Currently Working On
 
-- Neon‑style IPTV auto-fetch system (ARM SBC + Streamlink)
+- Deployment of a Quantitative Analysis System for US Stocks
+- IPTV auto-fetch system (ARM SBC + Streamlink)
 - Cloudflare Workers IPTV proxy relay
 - ARMv7‑friendly Docker images for streaming tools
-- Deploying Vue music apps on Vercel / Cloudflare Pages
 
 ---
 
 ## 💎 Learning
 
+- AI automation program
 - Advanced Cloudflare routing  
 - High‑performance streaming pipelines  
 - Multi‑device workflow optimization  
