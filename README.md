@@ -22,7 +22,7 @@
 
 ## 💻 About Me
 
-I build lightweight, efficient, cyberpunk‑style systems across **Linux**, **ARM SBCs**, and **Dockerized environments**.  
+I build lightweight, efficient, systems across **Linux**, **ARM SBCs**, and **Dockerized environments**.  
 My work focuses on:
 
 💠 **IPTV automation**  
