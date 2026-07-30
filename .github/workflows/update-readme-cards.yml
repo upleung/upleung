@@ -1,58 +1,49 @@
-name: GitHub Readme Stats
+name: Generate GitHub Stats Cards
 on:
-  workflow_dispatch:
   schedule:
-  - cron: 0 */4 * * *
+    - cron: "0 0 * * *" # 每天午夜 UTC 时间运行一次自动更新
+  workflow_dispatch:    # 允许你在网页端 Actions 界面手动点击运行
 
 jobs:
-  update-cards:
+  build:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    runs-on: ubuntu-latest
-    name: Update cards
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Ensure output folder
-        run: mkdir -p profile
-
-      - name: Generate stats (light mode)
-        uses: readme-tools/github-readme-stats-action@v1
+      # 1. 生成深色 GitHub 统计卡片 (对应 ./profile/stats-dark.svg)
+      - name: Generate dark stats card
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=default'
-          path: profile/stats-light.svg
-          token: ${{ secrets.STATS_PAT }}
-
-      - name: Generate stats (dark mode)
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=dark&bg_color=000000'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00eaff&icon_color=ff00ff&count_private=true'
           path: profile/stats-dark.svg
-          token: ${{ secrets.STATS_PAT }}
+          token: ${{ secrets.PAT }} 
 
-      - name: Generate top languages (light mode)
-        uses: readme-tools/github-readme-stats-action@v1
+      # 2. 生成浅色 GitHub 统计卡片 (对应 ./profile/stats-light.svg)
+      - name: Generate light stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true&hide_border=true&count_private=true'
+          path: profile/stats-light.svg
+          token: ${{ secrets.PAT }}
+
+      # 3. 生成深色语言卡片 (对应 ./profile/top-langs-dark.svg)
+      - name: Generate dark top langs card
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&card_width=347&exclude_repo=github-readme-stats,jindouyunERP,Guovin.github.io,hexo-blog-7.0&theme=default'
-          path: profile/top-langs-light.svg
-          token: ${{ secrets.STATS_PAT }}
-
-      - name: Generate top languages (dark mode)
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: top-langs
-          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&card_width=347&exclude_repo=github-readme-stats,jindouyunERP,Guovin.github.io,hexo-blog-7.0&theme=dark&bg_color=000000'
+          options: 'username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=ff00ff'
           path: profile/top-langs-dark.svg
-          token: ${{ secrets.STATS_PAT }}
+          token: ${{ secrets.PAT }}
 
-      - name: Commit cards
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
-          git add profile/*.svg
-          git commit -m "Update README cards" || exit 0
-          git push
+      # 4. 生成浅色语言卡片 (对应 ./profile/top-langs-light.svg)
+      - name: Generate light top langs card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&hide_border=true'
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.PAT }}
