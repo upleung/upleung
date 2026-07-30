@@ -28,7 +28,7 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=upleung&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=ff00ff" height="180px"/>
 
 <!-- Streak -->
-<img src="https://streak-stats.demolab.com?user=upleung&theme=tokyonight&hide_border=true&background=00000000&ring=00eaff&fire=ff00ff&currStreakLabel=00eaff" height="180px"/>
+<img src="https://github.com/upleung/upleung/blob/main/profile/streak.svg" height="180px"/>
 
 </div>
 
