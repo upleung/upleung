@@ -1,11 +1,11 @@
 <!-- Cyberpunk Neon Profile -->
 
 <h1 align="center">
-  <span style="color:#00eaff;">⚡ Plan your coding and coding your plan ⚡</span>
+  <span style="color:#00eaff;">🍔 Plan your coding and coding your plan 🍕</span>
 </h1>
 
 <h3 align="center" style="color:#ff00ff;">
-  Linux / ARMv7 Developer · Docker Builder · IPTV Streaming Development · Network Engineer
+  Linux / ARMv7 Developer · Docker Builder · Network Engineer
 </h3>
 
 ---
@@ -18,45 +18,6 @@
   <img src="https://img.shields.io/badge/Streamlink-8A2BE2?style=for-the-badge" />
 </p>
 
----
-
-## 💻 About Me
-
-I build lightweight, efficient, systems across **Linux**, **ARM SBCs**, and **Dockerized environments**.  
-My work focuses on:
-
-💠 **IPTV automation (MoonTV / TVBOX)**  
-💠 **Streamlink pipelines**  
-💠 **Cloudflare Workers API relays**  
-💠 **Multi‑arch Docker builds (ARMv7/ARM64)**  
-💠 **Vue music frontends (Solara / SOXL Music / GDMUSIC)**  
-💠 **OpenWrt + Xray + Singbox + Hy2 proxy networking**  
-💠 **Armbian Docker Builder on OneCloud (玩客云)**
-
-Everything I build follows one rule:  
-> **If it can be automated, it *will* be automated.**
-
----
-
-## 🔭 Currently Working On
-
-- Deployment of a Quantitative Analysis System for US Stocks
-- IPTV auto-fetch system (ARM SBC + Streamlink)
-- Cloudflare Workers IPTV proxy relay
-- ARMv7‑friendly Docker images for streaming tools
-
----
-
-## 💎 Learning
-
-- AI automation program
-- Advanced Cloudflare routing  
-- High‑performance streaming pipelines  
-- Multi‑device workflow optimization  
-
----
-
-# 🍔**GitHub Stats**
 
 <div align="center">
 
