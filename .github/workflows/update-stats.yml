@@ -1,8 +1,8 @@
 name: Generate GitHub Stats Cards
 on:
   schedule:
-    - cron: "0 0 * * *" # 每天午夜 UTC 时间运行一次自动更新
-  workflow_dispatch:    # 允许你在网页端 Actions 界面手动点击运行
+    - cron: "0 0 * * *" # 每天午夜运行一次
+  workflow_dispatch:    # 允许手动触发
 
 jobs:
   build:
@@ -10,9 +10,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # 1. 生成深色 GitHub 统计卡片 (对应 ./profile/stats-dark.svg)
+      # 1. 生成深色 GitHub 统计卡片
       - name: Generate dark stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -21,7 +22,7 @@ jobs:
           path: profile/stats-dark.svg
           token: ${{ secrets.PAT }} 
 
-      # 2. 生成浅色 GitHub 统计卡片 (对应 ./profile/stats-light.svg)
+      # 2. 生成浅色 GitHub 统计卡片
       - name: Generate light stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -30,7 +31,7 @@ jobs:
           path: profile/stats-light.svg
           token: ${{ secrets.PAT }}
 
-      # 3. 生成深色语言卡片 (对应 ./profile/top-langs-dark.svg)
+      # 3. 生成深色语言卡片
       - name: Generate dark top langs card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -39,7 +40,7 @@ jobs:
           path: profile/top-langs-dark.svg
           token: ${{ secrets.PAT }}
 
-      # 4. 生成浅色语言卡片 (对应 ./profile/top-langs-light.svg)
+      # 4. 生成浅色语言卡片
       - name: Generate light top langs card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -47,3 +48,10 @@ jobs:
           options: 'username=${{ github.repository_owner }}&layout=compact&hide_border=true'
           path: profile/top-langs-light.svg
           token: ${{ secrets.PAT }}
+
+      # 5. 关键步骤：把上面生成的图片自动提交并推送到你的仓库里
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update github stats cards"
+          branch: main
