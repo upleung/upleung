@@ -1,57 +1,64 @@
 name: Generate GitHub Stats Cards
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *" # 每天午夜运行一次
-  workflow_dispatch:    # 允许手动触发
+    - cron: '0 */4 * * *' # 每 4 小时自动更新一次
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  update-cards:
     permissions:
-      contents: write
+      contents: write # 必须的权限，允许写入仓库
+    runs-on: ubuntu-latest
+    name: Update cards
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4 #
 
-      # 1. 生成深色 GitHub 统计卡片
+      # 关键步骤 1：确保输出文件夹存在，防止因找不到目录而报错[cite: 4]
+      - name: Ensure output folder
+        run: mkdir -p profile #[cite: 4]
+
+      # 生成深色 GitHub 统计卡片 (带赛博朋克样式参数)
       - name: Generate dark stats card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@v1 #[cite: 4]
         with:
           card: stats
           options: 'username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00eaff&icon_color=ff00ff&count_private=true'
           path: profile/stats-dark.svg
           token: ${{ secrets.PAT }} 
 
-      # 2. 生成浅色 GitHub 统计卡片
+      # 生成浅色 GitHub 统计卡片
       - name: Generate light stats card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@v1 #[cite: 4]
         with:
           card: stats
           options: 'username=${{ github.repository_owner }}&show_icons=true&hide_border=true&count_private=true'
           path: profile/stats-light.svg
           token: ${{ secrets.PAT }}
 
-      # 3. 生成深色语言卡片
+      # 生成深色语言卡片 (带赛博朋克样式参数)
       - name: Generate dark top langs card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@v1 #[cite: 4]
         with:
           card: top-langs
           options: 'username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=ff00ff'
           path: profile/top-langs-dark.svg
           token: ${{ secrets.PAT }}
 
-      # 4. 生成浅色语言卡片
+      # 生成浅色语言卡片
       - name: Generate light top langs card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@v1 #[cite: 4]
         with:
           card: top-langs
           options: 'username=${{ github.repository_owner }}&layout=compact&hide_border=true'
           path: profile/top-langs-light.svg
           token: ${{ secrets.PAT }}
 
-      # 5. 关键步骤：把上面生成的图片自动提交并推送到你的仓库里
-      - name: Commit and Push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update github stats cards"
-          branch: main
+      # 关键步骤 2：使用原生 git 命令强制提交并推送文件[cite: 4]
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
