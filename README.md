@@ -46,8 +46,8 @@
 | 🎨 | **Frontend** | [![](https://skillicons.dev/icons?i=html,css,js,bootstrap,jquery,htmx)](#) |
 | ⚙️ | **Backend** | [![](https://skillicons.dev/icons?i=django,flask,fastapi,dotnet)](#) |
 | 🚀 | **DevOps** | [![](https://skillicons.dev/icons?i=github,git,linux,nginx,docker,cloudflare)](#) |
-| 🧰 | **Tools** | [![](https://skillicons.dev/icons?i=postman,npm,vscode,visualstudio,vim,sublime,pycharm,codepen)](#) |
-| 🎯 | **Other** | [![](https://skillicons.dev/icons?i=pr,ps,ai,wordpress,windows)](#) |
+| 💎 | **Tools** | [![](https://skillicons.dev/icons?i=postman,npm,vscode,visualstudio,vim,sublime,pycharm,codepen)](#) |
+| 📬 | **Contact** | [![](https://skillicons.dev/icons?i=twitter,instagram,discord,gmail)](#) |
 </div>
 
 <br/>
