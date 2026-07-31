@@ -4,24 +4,25 @@
   Plan your coding and coding your plan
 </h1>
 
-<h3 align="center" style="color:#8a8a8e;">
+<!-- 副标题使用优雅的冰霜紫 (AFA4CE) 点缀 -->
+<h3 align="center" style="color:#AFA4CE;">
   Linux / ARMv7 Developer · Docker Builder · Network Engineer
 </h3>
 
 <br/>
 
-<!-- 统一深空灰徽章，去掉花哨的颜色，更显高级 -->
+<!-- 旗舰机配色徽章 (云杉绿、旷野棕、海湾蓝、冰霜紫、晨曦金) -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Linux-23272E?style=for-the-badge&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/ARMv7-23272E?style=for-the-badge&logo=raspberry-pi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-23272E?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cloudflare-23272E?style=for-the-badge&logo=cloudflare&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vue.js-23272E?style=for-the-badge&logo=vue.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-2F5C50?style=for-the-badge&logo=linux&logoColor=white" alt="Spruce Green"/>
+  <img src="https://img.shields.io/badge/ARMv7-876655?style=for-the-badge&logo=raspberry-pi&logoColor=white" alt="Wilderness Brown"/>
+  <img src="https://img.shields.io/badge/Docker-3478B4?style=for-the-badge&logo=docker&logoColor=white" alt="Gulf Blue"/>
+  <img src="https://img.shields.io/badge/Cloudflare-AFA4CE?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Frost Purple"/>
+  <img src="https://img.shields.io/badge/Vue.js-E6C79C?style=for-the-badge&logo=vue.js&logoColor=black" alt="Morning Gold"/>
 </p>
 
 <br/>
 
-<!-- 【核心优化】对称排版：两张卡片放在同一个 p 标签内，自动水平并排显示，且去掉了 href 链接 -->
+<!-- 核心对称排版：无多余边框与链接 -->
 <p align="center">
   <!-- 暗黑模式展示这组 -->
   <img height="180px" src="./profile/stats-dark.svg#gh-dark-mode-only" alt="GitHub Stats" />
@@ -48,7 +49,8 @@
 <br/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GitHub-upleung-23272E?style=for-the-badge&logo=github&logoColor=white" />
+  <!-- 底部签名徽章使用薄荷绿 (9AD8BA) 呼应 -->
+  <img src="https://img.shields.io/badge/GitHub-upleung-9AD8BA?style=for-the-badge&logo=github&logoColor=1d1d1f" />
 </p>
 
 </div>
