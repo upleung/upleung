@@ -49,21 +49,24 @@
 | 🧰 | **Tools** | [![](https://skillicons.dev/icons?i=postman,npm,vscode,visualstudio,vim,sublime,pycharm,codepen)](#) |
 | 🎯 | **Other** | [![](https://skillicons.dev/icons?i=pr,ps,ai,wordpress,windows)](#) |
 </div>
-<br/>
-<div align="center">
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" />
-    <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-green-animate.svg" />
-  </picture>
-
-</div>
 <br/>
 <!-- 贪吃蛇居中展示 -->
 <p align="center">
   <img src="./profile/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="Snake Animation Dark" />
   <img src="./profile/github-contribution-grid-snake.svg#gh-light-mode-only" alt="Snake Animation Light" />
 </p>
+
+<br/>
+<div align="center">
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" />
+    <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-night-green.svg" />
+  </picture>
+
+</div>
+
 
 <br/>
 
@@ -73,3 +76,4 @@
 </p>
 
 </div>
+
