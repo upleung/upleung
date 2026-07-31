@@ -21,12 +21,6 @@
 
 <div align="center">
 
-<!-- GitHub Stats -->
-<img src="https://github-readme-stats.vercel.app/api?username=upleung&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00eaff&icon_color=ff00ff" height="180px"/>
-
-<!-- Top Languages -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=upleung&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=ff00ff" height="180px"/>
-
 <!-- Streak -->
 <img src="https://github.com/upleung/upleung/blob/main/profile/streak.svg" height="180px"/>
 
@@ -53,6 +47,8 @@
 <img height=259 src="./profile/top-langs-dark.svg#gh-dark-mode-only" alt="upleung's Language stats" />
 </a>
 </div>
+
+
 <img src="./profile/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="github contribution grid snake" />
 </div>
 
