@@ -2,7 +2,7 @@ name: Generate GitHub Stats Cards
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */36 * * *' # 每 36 小时自动更新一次
+    - cron: '0 */36 * * *' 
 
 jobs:
   update-cards:
@@ -17,51 +17,51 @@ jobs:
       - name: Ensure output folder
         run: mkdir -p profile
 
-      # 1. 生成深色 GitHub 统计卡片
+      # 1. 深色统计卡片 (Apple Dark: 纯白标题/图标，银灰文本)
       - name: Generate dark stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=00eaff&icon_color=ff00ff&count_private=true'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=9ca3af&icon_color=ffffff&count_private=true'
           path: profile/stats-dark.svg
           token: ${{ secrets.PAT }} 
 
-      # 2. 生成浅色 GitHub 统计卡片
+      # 2. 浅色统计卡片 (Apple Light: 纯黑标题/图标，深灰文本)
       - name: Generate light stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&hide_border=true&count_private=true'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&hide_border=true&bg_color=00000000&title_color=000000&text_color=1d1d1f&icon_color=000000&count_private=true'
           path: profile/stats-light.svg
           token: ${{ secrets.PAT }}
 
-      # 3. 生成深色语言卡片
+      # 3. 深色语言卡片 
       - name: Generate dark top langs card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: 'username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=ff00ff'
+          options: 'username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=9ca3af'
           path: profile/top-langs-dark.svg
           token: ${{ secrets.PAT }}
 
-      # 4. 生成浅色语言卡片
+      # 4. 浅色语言卡片
       - name: Generate light top langs card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: 'username=${{ github.repository_owner }}&layout=compact&hide_border=true'
+          options: 'username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=00000000&title_color=000000&text_color=1d1d1f'
           path: profile/top-langs-light.svg
           token: ${{ secrets.PAT }}
 
-      # 5. 生成连击 (Streak) 卡片 (已加入赛博朋克样式)
+      # 5. 连击 (Streak) 卡片 (深空灰质感)
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          options: 'user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=00000000&ring=00eaff&fire=ff00ff&currStreakLabel=00eaff&disable_animations=true'
+          options: 'user=${{ github.repository_owner }}&hide_border=true&background=00000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=9ca3af&sideNums=ffffff&sideLabels=9ca3af&dates=9ca3af&disable_animations=true'
           path: profile/streak.svg
-          token: ${{ secrets.PAT }} # 统一使用你的 PAT，确保获取数据的权限一致
+          token: ${{ secrets.PAT }} 
 
-      # 6. 生成贪吃蛇 (Snake) 贡献图 (分别生成白天和深色模式)
+      # 6. 贪吃蛇 (Snake)
       - name: Generate snake animation
         uses: Platane/snk/svg-only@v3
         with:
@@ -72,11 +72,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 7. 统一提交所有生成的 SVG 图片
+      # 7. 统一提交
       - name: Commit all cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
-          git commit -m "Update README cards including streak" || exit 0
+          git commit -m "Update README cards for Apple style" || exit 0
           git push
