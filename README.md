@@ -37,9 +37,19 @@
 <p align="center">
   <img height="180px" src="./profile/streak.svg" alt="GitHub Streak" />
 </p>
-
 <br/>
+<div align="center">
 
+| # | Category | Icons |
+|---|---|---|
+| 🔤 | **Languages** | [![](https://skillicons.dev/icons?i=python,js,ts,cs,c)](#) |
+| 🎨 | **Frontend** | [![](https://skillicons.dev/icons?i=html,css,js,bootstrap,jquery,htmx)](#) |
+| ⚙️ | **Backend** | [![](https://skillicons.dev/icons?i=django,flask,fastapi,dotnet)](#) |
+| 🚀 | **DevOps** | [![](https://skillicons.dev/icons?i=github,git,linux,nginx,docker,cloudflare)](#) |
+| 🧰 | **Tools** | [![](https://skillicons.dev/icons?i=postman,npm,vscode,visualstudio,vim,sublime,pycharm,codepen)](#) |
+| 🎯 | **Other** | [![](https://skillicons.dev/icons?i=pr,ps,ai,wordpress,windows)](#) |
+</div>
+<br/>
 <!-- 贪吃蛇居中展示 -->
 <p align="center">
   <img src="./profile/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="Snake Animation Dark" />
