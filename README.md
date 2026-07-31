@@ -53,6 +53,8 @@
 <img height=259 src="./profile/top-langs-dark.svg#gh-dark-mode-only" alt="upleung's Language stats" />
 </a>
 </div>
+<img src="./profile/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="github contribution grid snake" />
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/GitHub-upleung-00eaff?style=for-the-badge&logo=github" />
