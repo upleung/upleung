@@ -47,7 +47,7 @@
 | ⚙️ | **DevOps** | [![](https://skillicons.dev/icons?i=androidstudio,github,docker,vscode,git,aiscript)](#) |
 | 🚀 | **Server** | [![](https://skillicons.dev/icons?i=gcp,aws,azure,cloudflare,netlify)](#) |
 | 💎 | **System** | [![](https://skillicons.dev/icons?i=linux,debian,kali,raspberrypi,apple,windows)](#) |
-| 📬 | **Contact** | [![](https://skillicons.dev/icons?i=twitter,discord,instagram,gmail)](#) |
+| 📬 | **Contact** | [![](https://skillicons.dev/icons?i=twitter,discord,instagram,gmail,linkedin)](#) |
 </div>
 
 <br/>
