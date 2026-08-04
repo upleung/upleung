@@ -1,7 +1,7 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&duration=6800&pause=800&center=true&width=800&lines=Plan+your+coding+and+coding+your+plan+)](https://git.io/typing-svg)
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=5000&pause=6800&center=true&width=800&lines=Plan+your+coding+and+coding+your+plan+)](https://git.io/typing-svg)
+---
 <!-- 副标题使用优雅的冰霜紫 (AFA4CE) 点缀 -->
 <h3 align="center" style="color:#AFA4CE;">
   Linux / ARMv7 Developer · Docker Builder · Network Engineer
