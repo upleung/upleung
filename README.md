@@ -49,24 +49,30 @@
 </div>
 
 <br/>
+
+<div align="center" 
+     style="
+        width: 500px;
+        padding: 10px;
+        border: 1px solid #2A2F3A;
+        border-radius: 12px;
+        background-color: #0D1117;
+     ">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
+    <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-night-rainbow.svg" width="500px" />
+  </picture>
+</div>
+<br/>
 <!-- 贪吃蛇居中展示 -->
 <p align="center">
   <img src="./profile/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="Snake Animation Dark" />
   <img src="./profile/github-contribution-grid-snake.svg#gh-light-mode-only" alt="Snake Animation Light" />
 </p>
-
+<br/>
 <br/>
 <div align="center">
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
-    <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-night-rainbow.svg" />
-  </picture>
-
-</div>
-
-<br/>
-<br/>
 
 <p align="center">
   <!-- 底部签名徽章使用薄荷绿 (9AD8BA) 呼应 -->
