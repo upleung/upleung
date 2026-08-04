@@ -70,7 +70,7 @@
 
 <p align="center">
   <!-- 底部签名徽章使用薄荷绿 (9AD8BA) 呼应 -->
-  <img src="https://img.shields.io/badge/GitHub-upleung-9AD8BA?style=for-the-badge&logo=github&logoColor=1d1d1f" />
+  <img src="https://img.shields.io/badge/GitHub-upleung-25C2E6?style=for-the-badge&logo=github&logoColor=1d1d1f" />
 </p>
 
 </div>
