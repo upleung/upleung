@@ -38,12 +38,11 @@
 <br/>
 <div align="center">
 
-| # | Category | Icons |
+| ⌨️ | **Frontend** | [![](https://skillicons.dev/icons?i=css,nextjs,html,vue,tailwind,webpack)](#) |
 |---|---|---|
-| 🔤 | **Frontend** | [![](https://skillicons.dev/icons?i=css,nextjs,html,vue,tailwind,webpack)](#) |
-| 🎨 | **Backend** | [![](https://skillicons.dev/icons?i=java,nodejs,py,nginx,mongodb)](#) |
+| 💻 | **Backend** | [![](https://skillicons.dev/icons?i=java,nodejs,py,nginx,mongodb)](#) |
 | ⚙️ | **DevOps** | [![](https://skillicons.dev/icons?i=androidstudio,github,docker,vscode,git,aiscript)](#) |
-| 🚀 | **Server** | [![](https://skillicons.dev/icons?i=gcp,aws,azure,cloudflare,netlify)](#) |
+| ☁️ | **Server** | [![](https://skillicons.dev/icons?i=gcp,aws,azure,cloudflare,netlify)](#) |
 | 💎 | **System** | [![](https://skillicons.dev/icons?i=linux,debian,kali,raspberrypi,apple,windows)](#) |
 | 📬 | **Contact** | [![](https://skillicons.dev/icons?i=twitter,discord,instagram,gmail,linkedin)](#) |
 </div>
