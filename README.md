@@ -4,7 +4,7 @@
 ---
 <!-- 副标题使用优雅的冰霜紫 (AFA4CE) 点缀 -->
 <h3 align="center" style="color:#AFA4CE;">
-  Linux / ARMv7 Developer · Docker Builder · Network Engineer
+  Linux / ARM Developer · Docker Builder · Network Engineer
 </h3>
 
 <br/>
